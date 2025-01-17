@@ -61,10 +61,24 @@ const classes = [
   }
 ];
 
-function ClassCard({ classItem, onDialogChange }) {
+interface ClassItem {
+  title: string;
+  age: string;
+  level: string;
+  image: string;
+  description: string;
+}
+
+function ClassCard({
+  classItem,
+  onDialogChange,
+}: {
+  classItem: ClassItem;
+  onDialogChange: (isOpen: boolean) => void;
+}) {
   const [ref, inView] = useInView({
     triggerOnce: true,
-    threshold: 0.1
+    threshold: 0.1,
   });
 
   return (
@@ -93,7 +107,7 @@ function ClassCard({ classItem, onDialogChange }) {
         </CardHeader>
         <CardContent>
           <p className="text-muted-foreground mb-4">{classItem.description}</p>
-          <EnquiryDialog 
+          <EnquiryDialog
             classTitle={classItem.title}
             className="w-full"
             onOpenChange={onDialogChange}
@@ -103,6 +117,7 @@ function ClassCard({ classItem, onDialogChange }) {
     </motion.div>
   );
 }
+
 
 export function FeaturedClasses() {
   const [ref, inView] = useInView({

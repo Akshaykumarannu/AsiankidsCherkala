@@ -11,32 +11,39 @@ const achievements = [
     number: 2000,
     suffix: "+",
     title: "Live Shows",
-    description: "Mesmerizing performances worldwide"
+    description: "Mesmerizing performances worldwide",
   },
   {
     icon: Users,
     number: 1000,
     suffix: "+",
     title: "Students Trained",
-    description: "Building confidence through dance"
+    description: "Building confidence through dance",
   },
   {
     icon: Star,
     number: 20,
     suffix: "+",
     title: "Years of Excellence",
-    description: "Dedicated to dance education"
+    description: "Dedicated to dance education",
   },
   {
     icon: Award,
     number: 100,
     suffix: "%",
     title: "Parent Satisfaction",
-    description: "Trusted by families"
-  }
+    description: "Trusted by families",
+  },
 ];
 
-const Counter = ({ target, suffix = "", duration = 2000 }) => {
+// Define the prop types for the Counter component
+interface CounterProps {
+  target: number;
+  suffix?: string;
+  duration?: number;
+}
+
+const Counter: React.FC<CounterProps> = ({ target, suffix = "", duration = 2000 }) => {
   const [count, setCount] = useState(0);
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -51,7 +58,7 @@ const Counter = ({ target, suffix = "", duration = 2000 }) => {
       if (!startTime) startTime = timestamp;
       const progress = timestamp - startTime;
       const percentage = Math.min(progress / duration, 1);
-      
+
       setCount(Math.floor(percentage * target));
 
       if (percentage < 1) {
@@ -81,7 +88,7 @@ const Counter = ({ target, suffix = "", duration = 2000 }) => {
 export function Achievements() {
   const [ref, inView] = useInView({
     triggerOnce: true,
-    threshold: 0.1
+    threshold: 0.1,
   });
 
   return (
