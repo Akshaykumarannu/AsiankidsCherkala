@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { HeroSection } from "./components/hero-section";
 import { CategoryFilter } from "./components/category-filter";
 import { MediaGrid } from "./components/media-grid";
@@ -10,14 +10,19 @@ import { ScrollReveal } from "@/components/scroll-reveal";
 export default function Gallery() {
   const [selectedCategory, setSelectedCategory] = useState("all");
 
-  const filteredMedia = selectedCategory === "all"
-    ? mediaItems
-    : mediaItems.filter(item => item.category === selectedCategory);
+  // Memoize filtered media items to prevent unnecessary recalculations
+  const filteredMedia = useMemo(
+    () =>
+      selectedCategory === "all"
+        ? mediaItems
+        : mediaItems.filter((item) => item.category === selectedCategory),
+    [selectedCategory]
+  );
 
   return (
     <div className="min-h-screen bg-background">
       <HeroSection />
-      
+
       <div className="container py-16">
         <ScrollReveal>
           <CategoryFilter
@@ -25,9 +30,9 @@ export default function Gallery() {
             onCategoryChange={setSelectedCategory}
           />
         </ScrollReveal>
-
-        <MediaGrid items ={filteredMedia} />
+        
+        <MediaGrid items={filteredMedia as any} />
       </div>
     </div>
   );
-} 
+}
