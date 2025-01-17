@@ -18,7 +18,13 @@ const formSchema = z.object({
   message: z.string().min(10, "Message must be at least 10 characters"),
 });
 
-export function EnquiryDialog({ className = "", classTitle = "", onOpenChange }) {
+interface EnquiryDialogProps {
+  className?: string;
+  classTitle?: string;
+  onOpenChange?: (isOpen: boolean) => void; // Making this prop optional
+}
+
+export function EnquiryDialog({ className = "", classTitle = "", onOpenChange }: EnquiryDialogProps) {
   const [open, setOpen] = useState(false);
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -32,21 +38,16 @@ export function EnquiryDialog({ className = "", classTitle = "", onOpenChange })
   };
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    // Format the message for WhatsApp
-    const whatsappMessage = `*New Class Enquiry*\n\n` +
-      `*Class:* ${classTitle}\n` +
-      `*Name:* ${values.name}\n` +
-      `*Email:* ${values.email}\n` +
-      `*Phone:* ${values.phone}\n` +
-      `*Message:* ${values.message}`;
+    const whatsappMessage = encodeURIComponent(
+      `*New Class Enquiry*\n\n` +
+      `Class: ${classTitle || "General Enquiry"}\n` +
+      `Name: ${values.name}\n` +
+      `Email: ${values.email}\n` +
+      `Phone: ${values.phone}\n` +
+      `Message: ${values.message}`
+    );
 
-    // Encode the message for URL
-    const encodedMessage = encodeURIComponent(whatsappMessage);
-    
-    // Open WhatsApp with the pre-filled message
-    window.open(`https://wa.me/919740791523?text=${encodedMessage}`, '_blank');
-    
-    // Reset the form and close the dialog
+    window.open(`https://wa.me/918138865559?text=${whatsappMessage}`, "_blank");
     form.reset();
     handleOpenChange(false);
   }
@@ -54,12 +55,14 @@ export function EnquiryDialog({ className = "", classTitle = "", onOpenChange })
   return (
     <Dialog open={open} onOpenChange={handleOpenChange}>
       <DialogTrigger asChild>
-        <Button variant="outline" className={className}>Enquire Now</Button>
+        <Button variant="outline" className={className}>
+          Enquire Now
+        </Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
           <DialogTitle>
-            {classTitle ? `Enquire about ${classTitle}` : 'Send us a message'}
+            {classTitle ? `Enquire about ${classTitle}` : "Send us a message"}
           </DialogTitle>
         </DialogHeader>
         <Form {...form}>
@@ -110,10 +113,10 @@ export function EnquiryDialog({ className = "", classTitle = "", onOpenChange })
                 <FormItem>
                   <FormLabel>Message</FormLabel>
                   <FormControl>
-                    <Textarea 
-                      placeholder="Your message" 
-                      className="min-h-[100px]" 
-                      {...field} 
+                    <Textarea
+                      placeholder="Your message"
+                      className="min-h-[100px]"
+                      {...field}
                     />
                   </FormControl>
                   <FormMessage />
@@ -121,8 +124,17 @@ export function EnquiryDialog({ className = "", classTitle = "", onOpenChange })
               )}
             />
             <div className="flex gap-2">
-              <Button type="submit" className="flex-1">Send Message</Button>
-              <Button type="button" variant="outline" onClick={() => handleOpenChange(false)} className="flex-1">Close</Button>
+              <Button type="submit" className="flex-1">
+                Send Message
+              </Button>
+              <Button
+                type="button"
+                variant="outline"
+                onClick={() => handleOpenChange(false)}
+                className="flex-1"
+              >
+                Close
+              </Button>
             </div>
           </form>
         </Form>

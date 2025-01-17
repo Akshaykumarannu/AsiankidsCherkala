@@ -55,21 +55,8 @@ export const mediaItems = [
     category: "competition",
     date: "Jan 2024"
   },
-  {
-    type: "video",
-    url: "https://res.cloudinary.com/diqcdbpg4/video/upload/v1733513537/VID-20240128-WA0000_yld6cg.mp4",
-    thumbnail: "https://images.unsplash.com/photo-1508807526345-15e9b5f4eaff?auto=format&fit=crop&q=80",
-    title: "Kids Stage Dance Performance",
-    category: "performance",
-    date: "Jan 2024"
-  },
-  {
-    type: "image",
-    url: "https://images.unsplash.com/photo-1547153760-18fc86324498?auto=format&fit=crop&q=80",
-    title: "Summer Dance Workshop",
-    category: "workshop",
-    date: "Dec 2023"
-  },
+  
+  
   
   {
     type: "image",

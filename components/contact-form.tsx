@@ -10,33 +10,43 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 const formSchema = z.object({
-  name: z.string().min(2, "Name must be at least 2 characters"),
+  name: z.string().min(2, "Name must be at least 2 characters").trim(),
   email: z.string().email("Invalid email address"),
-  phone: z.string().min(10, "Please enter a valid phone number"),
+  phone: z.string().regex(/^\d{10,}$/, "Please enter a valid phone number"),
   subject: z.string().min(1, "Please select a subject"),
-  message: z.string().min(10, "Message must be at least 10 characters"),
+  message: z.string().min(10, "Message must be at least 10 characters").trim(),
 });
 
 export function ContactForm() {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
+    defaultValues: {
+      name: "",
+      email: "",
+      phone: "",
+      subject: "",
+      message: "",
+    },
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    // Format the message for WhatsApp
-    const whatsappMessage = `*New Contact Form Submission*\n\n` +
-      `*Name:* ${values.name}\n` +
-      `*Email:* ${values.email}\n` +
-      `*Phone:* ${values.phone}\n` +
-      `*Subject:* ${values.subject}\n` +
-      `*Message:* ${values.message}`;
+    // Format the WhatsApp message
+    const whatsappMessage = [
+      `*New Contact Form Submission*`,
+      `Name: ${values.name}`,
+      `Email: ${values.email}`,
+      `Phone: ${values.phone}`,
+      `Subject: ${values.subject}`,
+      `Message:`,
+      values.message,
+    ].join("\n");
 
     // Encode the message for URL
     const encodedMessage = encodeURIComponent(whatsappMessage);
-    
-    // Open WhatsApp with the pre-filled message
-    window.open(`https://wa.me/919740791523?text=${encodedMessage}`, '_blank');
-    
+
+    // Open WhatsApp with the formatted message
+    window.open(`https://wa.me/918138865559?text=${encodedMessage}`, "_blank");
+
     // Reset the form
     form.reset();
   }

@@ -26,8 +26,8 @@ export default function Gallery() {
           />
         </ScrollReveal>
 
-        <MediaGrid items={filteredMedia} />
+        <MediaGrid items ={filteredMedia} />
       </div>
     </div>
   );
-}
+} 

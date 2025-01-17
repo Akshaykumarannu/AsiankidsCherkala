@@ -24,7 +24,7 @@ export default function Contact() {
     {
       icon: Phone,
       title: "Call Us",
-      details: ["+91 81388 65559"],
+      details: ["+91 81388 65559 \n, +91 95673 36114"],
       action: {
         text: "Call Now",
         href: "tel:+918138865559"
@@ -52,10 +52,10 @@ export default function Contact() {
     {
       icon: Phone,
       title: "Call Us",
-      details: ["+91 81388 65559"],
+      details: ["+91 79073 93309"],
       action: {
         text: "Call Now",
-        href: "tel:+918138865559"
+        href: "tel:+917907393309"
       },
       color: "text-green-500"
     },

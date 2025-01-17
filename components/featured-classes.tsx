@@ -19,28 +19,28 @@ const classes = [
   },
   {
     title: "Contemporary",
-    age: "8-15",
+    age: "8-20",
     level: "All Levels",
     image: "https://images.unsplash.com/photo-1508807526345-15e9b5f4eaff?auto=format&fit=crop&q=80",
     description: "Express yourself through fluid, modern dance movements."
   },
   {
     title: "Hip Hop Foundations",
-    age: "7-15",
+    age: "7-20",
     level: "All Levels",
-    image: "https://images.unsplash.com/photo-1535525153412-5a42439a210d?auto=format&fit=crop&q=80",
+    image: "https://res.cloudinary.com/diqcdbpg4/image/upload/v1737118230/hip-hop-dancer_wpqd6l.jpg",
     description: "Master the fundamentals of hip hop and urban dance styles."
   },
   {
     title: "Zumba",
-    age: "6-15",
+    age: "6-50",
     level: "All Levels",
     image: "https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&q=80",
     description: "Fun, energetic dance fitness program for all skill levels."
   },
   {
     title: "Western Dance",
-    age: "7-15",
+    age: "7-25",
     level: "All Levels",
     image: "https://images.unsplash.com/photo-1508700929628-666bc8bd84ea?auto=format&fit=crop&q=80",
     description: "Learn popular western dance styles and techniques."

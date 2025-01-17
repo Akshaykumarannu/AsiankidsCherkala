@@ -6,11 +6,35 @@ import { Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
-const teamMembers = Array(40).fill(null).map((_, index) => ({
-  name: `Team Member ${index + 1}`,
-  image: `https://source.unsplash.com/random/400x400?portrait&${index}`,
-  instagram: "asiankids_dancecrew_official"
-}));
+const teamMembers = [
+  {
+    name: "Akshay Kumar",
+    image: "https://res.cloudinary.com/diqcdbpg4/image/upload/v1737115309/akshay2_mt7y7o.png",
+    instagram: "annu_akshay",
+  },
+  {
+    name: "Rengith",
+    image: "https://res.cloudinary.com/diqcdbpg4/image/upload/v1737116275/renjith_wpp6ya.png",
+    instagram: "mr_capture_head",
+  },
+  {
+    name: "Shyamds Vaidhyar",
+    image: "https://res.cloudinary.com/diqcdbpg4/image/upload/v1737116317/shyam_udmxv6.jpg",
+    instagram: "son_of_devadas",
+  },
+  {
+    name: "Vaishak",
+    image: "https://res.cloudinary.com/diqcdbpg4/image/upload/v1737117033/vaishak_m9da2e.png",
+    instagram: "son_of_devadas",
+  },
+  {
+    name: "Vinod",
+    image: "https://res.cloudinary.com/diqcdbpg4/image/upload/v1737117034/vinod_m25cwy.png",
+    instagram: "son_of_devadas",
+  },
+  // Add more members here
+];
+
 
 export default function Team() {
   return (
