@@ -62,10 +62,10 @@ export default function Contact() {
     {
       icon: Mail,
       title: "Email Us",
-      details: ["contact@asiankids.com"],
+      details: ["asiankidsdancecrew@gmail.com"],
       action: {
         text: "Send Email",
-        href: "mailto:contact@asiankids.com"
+        href: "mailto: asiankidsdancecrew@gmail.com"
       },
       color: "text-pink-500"
     },
@@ -73,9 +73,9 @@ export default function Contact() {
       icon: Clock,
       title: "Opening Hours",
       details: [
-        "Monday - Friday: 9:00 AM - 8:00 PM",
-        "Saturday: 10:00 AM - 6:00 PM",
-        "Sunday: Closed"
+        
+        "Saturday: 10:00 AM - 5:00 PM",
+        "Sunday: 09:00 AM - 5:00 PM"
       ],
       color: "text-purple-500"
     }
@@ -189,18 +189,30 @@ export default function Contact() {
             </div>
 
             <Card className="overflow-hidden">
-              <CardContent className="p-0">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.5468957631737!2d75.1062!3d12.5987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba48c4665555555%3A0x2f2f2f2f2f2f2f2f!2sAsian%20Kids%20Dance%20Crew!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
-                  width="100%"
-                  height="300"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </CardContent>
-            </Card>
+  <CardContent className="p-0">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3899.0419706429743!2d75.08943201482968!3d12.43678789127469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba4b9e5f3e85379%3A0xf66b7c6c8f6b8b35!2sAsian%20Kids%20Dance%20Studio%2C%20Uduma!5e0!3m2!1sen!2sin!4v1610000000000!5m2!1sen!2sin"
+      width="100%"
+      height="300"
+      style={{ border: 0 }}
+      allowFullScreen
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+    ></iframe>
+    <div className="p-4 text-center">
+      <a
+        href="https://www.google.com/maps/dir/?api=1&destination=12.436788,75.089432"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-red-500 font-bold underline"
+      >
+        Get Directions →
+      </a>
+    </div>
+  </CardContent>
+</Card>
+
+
           </motion.div>
 
           <motion.div

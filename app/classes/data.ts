@@ -3,7 +3,7 @@ export const classes = [
     id: "classical",
     title: "Classical Dance",
     category: "Traditional",
-    ageGroups: ["5-8 years", "9-12 years", "13-15 years"],
+    ageGroups: ["5-8 years", "9-12 years", "13-15 years +"],
     description: "Experience the grace and elegance of traditional Indian classical dance forms. Our comprehensive program covers Bharatanatyam, Kathak, and Mohiniyattam.",
     features: [
       "Traditional mudras and expressions",
@@ -11,9 +11,9 @@ export const classes = [
       "Cultural understanding",
       "Performance opportunities"
     ],
-    schedule: "Mon, Wed, Fri: 4:00 PM - 5:30 PM",
-    instructor: "Sarah Chen",
-    video: "https://assets.mixkit.co/videos/preview/mixkit-ballet-dancer-performing-a-dance-routine-40033-large.mp4",
+    schedule: "Sat, Sun: 9:00 AM - 5:30 PM",
+    instructor: "Team Member",
+    video: "https://res.cloudinary.com/diqcdbpg4/video/upload/v1737449043/SaveClip.App_AQPCLNMd2_KM1hYfqxMd0U_AQ4vfcxO7d9vPviA0yOBbooCAyi2gj1P323CnWNhug_fmOwdJCN3cWSljQtn-43T7a-B45pvntkhZLbA_m3exeh.mp4",
     image: "https://res.cloudinary.com/diqcdbpg4/image/upload/v1736408151/classical_image_akd_clpgy1.jpg",
     benefits: [
       "Improves posture and grace",
@@ -26,7 +26,7 @@ export const classes = [
     id: "contemporary",
     title: "Contemporary Dance",
     category: "Modern",
-    ageGroups: ["8-12 years", "13-16 years"],
+    ageGroups: ["8-12 years", "13-16 years +"],
     description: "Explore modern dance techniques and express yourself through fluid movements and creative choreography.",
     features: [
       "Modern dance techniques",
@@ -34,9 +34,9 @@ export const classes = [
       "Emotional expression",
       "Creative choreography"
     ],
-    schedule: "Tue, Thu: 5:00 PM - 6:30 PM",
-    instructor: "Emily Wang",
-    video: "https://assets.mixkit.co/videos/preview/mixkit-young-woman-practicing-dance-routine-40034-large.mp4",
+    schedule: "Sat, Sun: 9:00 AM - 5:30 PM",
+    instructor: "Team Member",
+    video: "https://res.cloudinary.com/diqcdbpg4/video/upload/v1737449042/SaveClip.App_AQNMBFYzFBpbSI4_CbMN3_98q-u59iyi9qMvW3Zf_5RAac6_AOUoAZ3jekVAP7CP_DgbJvSyTqOUH8lTC2eu6fSUTjVDLu9iOP8Q6gw_iaxkx2.mp4",
     image: "https://images.unsplash.com/photo-1508807526345-15e9b5f4eaff?auto=format&fit=crop&q=80",
     benefits: [
       "Enhanced flexibility",
@@ -45,57 +45,35 @@ export const classes = [
       "Emotional development"
     ]
   },
+  
   {
-    id: "hiphop",
-    title: "Hip Hop",
-    category: "Urban",
-    ageGroups: ["7-10 years", "11-15 years"],
-    description: "Learn the latest hip hop moves and urban dance styles in a high-energy, fun environment.",
+    id: "drawing-art",
+    title: "Drawing and Art",
+    category: "Creative Arts",
+    ageGroups: ["5-10 years", "11-15 years", "16 years +"],
+    description: "Unleash your creativity through our Drawing and Art classes. Learn sketching, painting, and artistic techniques to express yourself visually.",
     features: [
-      "Street dance styles",
-      "Freestyle sessions",
-      "Battle techniques",
-      "Music interpretation"
+      "Basic to advanced sketching techniques",
+      "Color theory and painting methods",
+      "Creative expression",
+      "Portfolio creation for young artists"
     ],
-    schedule: "Mon, Wed: 6:00 PM - 7:30 PM",
-    instructor: "Mike Lee",
-    video: "https://assets.mixkit.co/videos/preview/mixkit-young-woman-doing-a-hip-hop-dance-routine-40035-large.mp4",
-    image: "https://images.unsplash.com/photo-1535525153412-5a42439a210d?auto=format&fit=crop&q=80",
+    schedule: "Sat, Sun: 10:00 AM - 4:00 PM",
+    instructor: "Art Specialist Team",
+    video: "https://res.cloudinary.com/diqcdbpg4/video/upload/v1737448994/VID_20250121_004030_437_zjo8uz.mp4",
+    image: "https://images.unsplash.com/photo-1598618449747-1b8f7b9621b3?auto=format&fit=crop&q=80",
     benefits: [
-      "Improved coordination",
-      "Increased confidence",
-      "Social skills development",
-      "Physical fitness"
-    ]
-  },
-  {
-    id: "kpop",
-    title: "K-Pop Dance",
-    category: "Modern",
-    ageGroups: ["8-12 years", "13-16 years"],
-    description: "Master popular K-Pop dance routines and learn the latest trends in Korean pop dance.",
-    features: [
-      "K-Pop choreography",
-      "Formation training",
-      "Performance skills",
-      "Group dynamics"
-    ],
-    schedule: "Tue, Thu: 4:00 PM - 5:30 PM",
-    instructor: "Jenny Kim",
-    video: "https://assets.mixkit.co/videos/preview/mixkit-young-woman-dancing-to-upbeat-music-40036-large.mp4",
-    image: "https://images.unsplash.com/photo-1508700929628-666bc8bd84ea?auto=format&fit=crop&q=80",
-    benefits: [
-      "Stamina building",
-      "Team coordination",
-      "Performance skills",
-      "Cultural appreciation"
+      "Enhances creativity and imagination",
+      "Improves fine motor skills",
+      "Boosts confidence through self-expression",
+      "Develops an appreciation for visual arts"
     ]
   },
   {
     id: "western",
     title: "Western Dance",
     category: "Modern",
-    ageGroups: ["6-9 years", "10-14 years"],
+    ageGroups: ["6-9 years", "10-14 years +"],
     description: "Learn various western dance styles including jazz, ballet, and modern dance techniques.",
     features: [
       "Multiple dance styles",
@@ -103,9 +81,9 @@ export const classes = [
       "Performance preparation",
       "Artistic development"
     ],
-    schedule: "Wed, Fri: 5:00 PM - 6:30 PM",
-    instructor: "David Kim",
-    video: "https://assets.mixkit.co/videos/preview/mixkit-ballet-dancer-performing-in-a-studio-40037-large.mp4",
+    schedule: "Sat, Sun: 9:00 AM - 5:30 PM",
+    instructor: "Team Members",
+    video: "https://res.cloudinary.com/diqcdbpg4/video/upload/v1737449043/SaveClip.App_AQPHDnl5EpyVSiyzG6MgmpAcawHgdtooS6iPg7aKOjaRfAXuuI5wRDSFwbpUVd56dA1s0D_QgiXmEkpz58R2Qyc4R_G-_sxEALxzHd4_ztprv9.mp4",
     image: "https://images.unsplash.com/photo-1547153760-18fc86324498?auto=format&fit=crop&q=80",
     benefits: [
       "Technical proficiency",

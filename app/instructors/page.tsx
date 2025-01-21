@@ -58,7 +58,7 @@ const teamMembers = [
   {
     name: "Gappy",
     image:
-      "https://res.cloudinary.com/diqcdbpg4/image/upload/v1737116903/gappy_n34nkx.jpg",
+      "https://res.cloudinary.com/diqcdbpg4/image/upload/v1737464082/gappi_r5tbl1.webp",
     instagram: "",
   },
   {
@@ -81,6 +81,129 @@ const teamMembers = [
       "https://res.cloudinary.com/diqcdbpg4/image/upload/v1737255762/Screenshot_20240807-142401_abfkue.webp",
     instagram: "",
   },
+  {
+    name: "Radhu",
+    image:
+      "https://res.cloudinary.com/diqcdbpg4/image/upload/v1737464111/Screenshot_20240807-143927_hdmt14.png",
+    instagram: "",
+  },
+  {
+    name: "Anupama",
+    image:
+      "https://res.cloudinary.com/diqcdbpg4/image/upload/v1737464111/Screenshot_20240809-204459_riturz.png",
+    instagram: "",
+  },
+  {
+    name: "Vavachi",
+    image:
+      "https://res.cloudinary.com/diqcdbpg4/image/upload/v1737464110/Screenshot_20240807-142833_suaixg.png",
+    instagram: "",
+  },
+  {
+    name: "Ranjith Pady",
+    image:
+      "https://res.cloudinary.com/diqcdbpg4/image/upload/v1737464110/Screenshot_20240807-183203_zge7ju.webp",
+    instagram: "",
+  },
+  {
+    name: "Anjur",
+    image:
+      "https://res.cloudinary.com/diqcdbpg4/image/upload/v1737464107/Screenshot_20240807-143210_igqhss.png",
+    instagram: "annu_akshay",
+  },
+  {
+    name: "Vishnu",
+    image:
+      "https://res.cloudinary.com/diqcdbpg4/image/upload/v1737464107/Screenshot_20240807-143341_cotwwh.png",
+    instagram: "mr_capture_head",
+  },
+  {
+    name: "Sooraj",
+    image:
+      "https://res.cloudinary.com/diqcdbpg4/image/upload/v1737464107/Screenshot_20240807-143248_ejnyjq.png",
+    instagram: "",
+  },
+  {
+    name: "Neethu",
+    image:
+      "https://res.cloudinary.com/diqcdbpg4/image/upload/v1737465560/Screenshot_20250121-184817_quoseg.png",
+    instagram: "",
+  },
+  {
+    name: "Pranav",
+    image:
+      "https://res.cloudinary.com/diqcdbpg4/image/upload/v1737465694/Screenshot_20250121-185056_zb7bmv.png",
+    instagram: "",
+  },
+  {
+    name: "Srijina",
+    image:
+      "https://res.cloudinary.com/diqcdbpg4/image/upload/v1737464106/Screenshot_20240807-143100_wxjznl.webp",
+    instagram: "",
+  },
+
+  {
+    name: "Swapna",
+    image:
+      "https://res.cloudinary.com/diqcdbpg4/image/upload/v1737465846/Screenshot_20250121-185330_fz2dvl.png",
+    instagram: "",
+  },
+
+  {
+    name: "Ameya",
+    image:
+      "https://res.cloudinary.com/diqcdbpg4/image/upload/v1737464105/Screenshot_20240807-142954_mdkns1.webp",
+    instagram: "",
+  },
+  {
+    name: "Nakshatra",
+    image:
+      "https://res.cloudinary.com/diqcdbpg4/image/upload/v1737464104/Screenshot_20240807-142724_tyyuji.png",
+    instagram: "",
+  },
+  {
+    name: "Richu",
+    image:
+      "https://res.cloudinary.com/diqcdbpg4/image/upload/v1737464104/Screenshot_20240807-142543_qcdsjd.png",
+    instagram: "",
+  },
+  {
+    name: "Ranjith",
+    image:
+      "https://res.cloudinary.com/diqcdbpg4/image/upload/v1737464104/Screenshot_20240807-142616_riph6h.webp",
+    instagram: "",
+  },
+  {
+    name: "Shreya",
+    image:
+      "https://res.cloudinary.com/diqcdbpg4/image/upload/v1737464103/Screenshot_20240807-142205_ua3fur.png",
+    instagram: "",
+  },
+  {
+    name: "Rakhi",
+    image:
+      "https://res.cloudinary.com/diqcdbpg4/image/upload/v1737464103/Screenshot_20240807-142123_pfd25p.png",
+    instagram: "annu_akshay",
+  },
+  {
+    name: "Midhuna",
+    image:
+      "https://res.cloudinary.com/diqcdbpg4/image/upload/v1737464102/Screenshot_20240806-181958_cuniz3.png",
+    instagram: "mr_capture_head",
+  },
+  {
+    name: "Navami",
+    image:
+      "https://res.cloudinary.com/diqcdbpg4/image/upload/v1737466519/Screenshot_20250121-190436_teqx5v.png",
+    instagram: "mr_capture_head",
+  },
+  {
+    name: "Achu",
+    image:
+      "https://res.cloudinary.com/diqcdbpg4/image/upload/v1737464109/Screenshot_20240807-144016_n2gftp.webp",
+    instagram: "mr_capture_head",
+  },
+  
   // Add more members here
 ];
 

@@ -75,9 +75,9 @@ export function HeroSection() {
             <Button
               size="lg"
               className="bg-gradient-to-r from-primary via-accent to-secondary hover:opacity-90 animate-gradient glow-effect"
-              onClick={handleJoinUsClick}
-            >
-              Join Us <ArrowRight className="ml-2 h-4 w-4" />
+              asChild
+            ><Link href="/contact">Join Us</Link>
+              {/* Join Us <ArrowRight className="ml-2 h-4 w-4" /> */}
             </Button>
             <Button
               size="lg"

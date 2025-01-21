@@ -48,29 +48,17 @@ export const mediaItems = [
     category: "workshop",
     date: "Feb 2024"
   },
-  {
-    type: "image",
-    url: "https://images.unsplash.com/photo-1516475429286-465d815a0df7?auto=format&fit=crop&q=80",
-    title: "Annual Dance Competition Finals",
-    category: "competition",
-    date: "Jan 2024"
-  },
-  
+ 
   
   
   {
-    type: "image",
-    url: "https://images.unsplash.com/photo-1518834107812-67b0b7c58434?auto=format&fit=crop&q=80",
+    type: "video",
+    
+    url: "https://res.cloudinary.com/diqcdbpg4/video/upload/v1737452581/VID-20241230-WA0004_kw0get.mp4",
+    thumbnail: "https://res.cloudinary.com/diqcdbpg4/image/upload/v1737453561/Screenshot_20250121-152826_jg2g9w.png",
     title: "Practice Session",
     category: "practice",
     date: "Nov 2023"
   },
-  {
-    type: "video",
-    url: "https://assets.mixkit.co/videos/preview/mixkit-young-woman-practicing-dance-routine-40034-large.mp4",
-    thumbnail: "https://images.unsplash.com/photo-1508700929628-666bc8bd84ea?auto=format&fit=crop&q=80",
-    title: "Dance Practice Highlights",
-    category: "practice",
-    date: "Nov 2023"
-  }
+  
 ];
