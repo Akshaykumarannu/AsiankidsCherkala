@@ -28,15 +28,15 @@ export function HeroSection() {
 
       <div className="relative container mx-auto px-4">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           className="text-center max-w-4xl mx-auto"
         >
           <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
+            initial={{ opacity: 0, scale: 0.6 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.2, duration: 0.5 }}
+            transition={{ delay: 0.1, duration: 0.5 }}
             className="mb-6 inline-block"
           >
             <span className="glass-effect px-6 py-2 rounded-full text-sm font-medium flex items-center gap-2 justify-center">
@@ -47,9 +47,9 @@ export function HeroSection() {
 
           <motion.h1
             className="text-5xl md:text-7xl font-bold mb-6 relative"
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4, duration: 0.8 }}
+            transition={{ delay: 0.2, duration: 0.8 }}
           >
             <span className="gradient-text text-glow block mt-2">
               Asian Kids
