@@ -25,7 +25,7 @@ export function SocialSidebar() {
           size="icon"
           variant="ghost"
           className="text-green-500 hover:text-green-600 hover:bg-green-100 dark:hover:bg-green-900/20"
-          onClick={() => window.open('https://wa.me/918138865559', '_blank')}
+          onClick={() => window.open('https://wa.me/917907393309', '_blank')}
         >
           <MessageCircle className="h-5 w-5" />
         </Button>
@@ -33,7 +33,7 @@ export function SocialSidebar() {
           size="icon"
           variant="ghost"
           className="text-blue-500 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-900/20"
-          onClick={() => window.open('tel:+918138865559')}
+          onClick={() => window.open('tel:+917907393309')}
         >
           <Phone className="h-5 w-5" />
         </Button>

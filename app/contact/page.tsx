@@ -8,6 +8,35 @@ import { Badge } from "@/components/ui/badge";
 
 export default function Contact() {
   const contactInfo = [
+   
+
+    
+    
+    {
+      icon: MapPin,
+      title: "Visit Us",
+      details: [
+        
+        ,
+        "Asian Kids Dance Sudio",
+        "Romana Center Uduma (KASARAGOD)"
+      ],
+      color: "text-blue-500"
+
+    
+    },
+    
+    
+    {
+      icon: Phone,
+      title: "Call Us",
+      details: ["+91 79073 93309 \n,+91 95267 35765"],
+      action: {
+        text: "Call Now",
+        href: "tel:+917907393309"
+      },
+      color: "text-green-500"
+    },
     {
       icon: MapPin,
       title: "Visit Us",
@@ -31,51 +60,23 @@ export default function Contact() {
       },
       color: "text-green-500"
     },
-
-    
-    
-    {
-      icon: MapPin,
-      title: "Visit Us",
-      details: [
-        
-        ,
-        "Asian Kids Dance Sudio",
-        "Uduma,Near SBI Bank (KASARAGOD)"
-      ],
-      color: "text-blue-500"
-
-    
-    },
-    
-    
-    {
-      icon: Phone,
-      title: "Call Us",
-      details: ["+91 79073 93309"],
-      action: {
-        text: "Call Now",
-        href: "tel:+917907393309"
-      },
-      color: "text-green-500"
-    },
-    {
-      icon: Mail,
-      title: "Email Us",
-      details: ["asiankidsdancecrew@gmail.com"],
-      action: {
-        text: "Send Email",
-        href: "mailto: asiankidsdancecrew@gmail.com"
-      },
-      color: "text-pink-500"
-    },
+    // {
+    //   icon: Mail,
+    //   title: "Email Us",
+    //   details: ["asiankidsdancecrew@gmail.com"],
+    //   action: {
+    //     text: "Send Email",
+    //     href: "mailto: asiankidsdancecrew@gmail.com"
+    //   },
+    //   color: "text-pink-500"
+    // },
     {
       icon: Clock,
       title: "Opening Hours",
       details: [
         
-        "Saturday: 10:00 AM - 5:00 PM",
-        "Sunday: 09:00 AM - 5:00 PM"
+        "Saturday: 09:00 AM - 6:00 PM",
+        "Sunday: 09:00 AM - 6:00 PM"
       ],
       color: "text-purple-500"
     }
@@ -91,7 +92,7 @@ export default function Contact() {
     {
       icon: MessageCircle,
       title: "WhatsApp",
-      href: "https://wa.me/918138865559",
+      href: "https://wa.me/917907393309",
       color: "text-green-500 hover:bg-green-500"
     }
   ];

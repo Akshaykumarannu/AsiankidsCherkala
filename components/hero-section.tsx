@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export function HeroSection() {
   const handleJoinUsClick = () => {
-    window.open('https://wa.me/918138865559', '_blank');
+    window.open('https://wa.me/917907393309', '_blank');
   };
 
   return (

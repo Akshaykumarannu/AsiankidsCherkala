@@ -20,7 +20,7 @@ export function MobileSocialBar() {
             variant="ghost"
             size="sm"
             className="text-green-500"
-            onClick={() => window.open('https://wa.me/918138865559', '_blank')}
+            onClick={() => window.open('https://wa.me/917907393309', '_blank')}
           >
             <MessageCircle className="h-5 w-5" />
           </Button>
@@ -28,7 +28,7 @@ export function MobileSocialBar() {
             variant="ghost"
             size="sm"
             className="text-blue-500"
-            onClick={() => window.open('tel:+918138865559')}
+            onClick={() => window.open('tel:+917907393309')}
           >
             <Phone className="h-5 w-5" />
           </Button>

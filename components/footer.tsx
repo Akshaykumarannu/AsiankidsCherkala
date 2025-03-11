@@ -16,25 +16,21 @@ export function Footer() {
     setEmail("");
   };
 
+
   const navigation = {
     main: [
-      { name: 'Home', href: '/' },
-      { name: 'About Us', href: '/about' },
-      { name: 'Classes', href: '/classes' },
-      { name: 'Gallery', href: '/gallery' },
-      { name: 'Instructors', href: '/instructors' },
-      { name: 'Contact', href: '/contact' },
-      { name: 'Blog', href: '/blog' },
-      { name: 'Schedule', href: '/schedule' },
-      { name: 'Virtual Tour', href: '/virtual-tour' },
-      { name: 'Register', href: '/register' },
-      { name: 'FAQ', href: '/faq' }
+      { name: "Home", href: "/" },
+      { name: "About Us", href: "/about" },
+      { name: "Classes", href: "/classes" },
+      { name: "Gallery", href: "/gallery" },
+      { name: "Instructors", href: "/instructors" },
+      { name: "Contact", href: "/contact" },
     ],
     social: [
-      { name: 'Instagram', icon: Instagram, href: 'https://instagram.com/asiankids_dancecrew_official' },
-      { name: 'Facebook', icon: Facebook, href: '#' },
-      { name: 'YouTube', icon: Youtube, href: '#' }
-    ]
+      { name: "Instagram", icon: Instagram, href: "https://instagram.com/asiankids_dancecrew_official" },
+      { name: "Facebook", icon: Facebook, href: "#" },
+      { name: "YouTube", icon: Youtube, href: "#" },
+    ],
   };
 
   return (
@@ -49,9 +45,7 @@ export function Footer() {
             className="space-y-4"
           >
             <h3 className="text-2xl font-bold gradient-text">Asian Kids Dance Crew</h3>
-            <p className="text-muted-foreground">
-              Empowering young dancers through movement and creativity since 2000.
-            </p>
+            <p className="text-muted-foreground">Empowering young dancers through movement and creativity since 2000.</p>
             <div className="flex space-x-4">
               {navigation.social.map((item) => (
                 <motion.a
@@ -70,6 +64,50 @@ export function Footer() {
             </div>
           </motion.div>
 
+          {/* Contact Info */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="space-y-4"
+          >
+            <h3 className="text-lg font-semibold">Contact Us</h3>
+            <div className="space-y-4">
+            <div className="flex gap-3 text-muted-foreground">
+                <MapPin className="h-5 w-5 text-primary" />
+                <div>
+                  <p className="font-semibold">Asian Kids Dance Studio</p>
+                  <p>Romana Centre, Uduma, Kasaragod</p>
+                </div>
+              </div>
+              <div className="flex gap-3 text-muted-foreground">
+                <MapPin className="h-5 w-5 text-primary" />
+                <div>
+                  <p className="font-semibold">Asian Kids School of Dance & Music</p>
+                  <p>Pady Road, Near Supplyco, Cherkala, Kasaragod</p>
+                </div>
+              </div>
+              
+              <div className="grid grid-cols-2 gap-4">
+                {["79073 93309", "95267 35765", "95673 36114", "81388 65559"].map((phone, index) => (
+                  <a
+                    key={index}
+                    href={`tel:${phone.replace(/ /g, "")}`}
+                    className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    <Phone className="h-5 w-5" /> {phone}
+                  </a>
+                ))}
+              </div>
+              <div className="flex gap-3 text-muted-foreground">
+                <Clock className="h-5 w-5 text-primary" />
+                <div>
+                  <p>Sat & Sun: 9:00 AM - 6:00 PM</p>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+
           {/* Quick Links */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -78,7 +116,7 @@ export function Footer() {
           >
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <nav className="grid grid-cols-1 gap-2">
-              {navigation.main.slice(0, 6).map((item) => (
+              {navigation.main.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
@@ -90,48 +128,6 @@ export function Footer() {
             </nav>
           </motion.div>
 
-          {/* Contact Info */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="space-y-4"
-          >
-            <h3 className="text-lg font-semibold">Contact Us</h3>
-            <div className="space-y-3">
-              <div className="flex items-start gap-3 text-muted-foreground">
-                <MapPin className="h-5 w-5 mt-1 text-primary" />
-                <div>
-                  <p>Asian Kids School of Dance & Music</p>
-                  <p>Pady road, Near Supplyco,</p>
-                  <p>Cherkala(KASARAGOD)</p>
-                </div>
-              </div>
-              <a 
-                href="tel:+918138865559" 
-                className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors"
-              >
-                <Phone className="h-5 w-5" />
-                +91 81388 65559
-              </a>
-              <a 
-                href="mailto:contact@asiankids.com"
-                className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors"
-              >
-                <Mail className="h-5 w-5" />
-                contact@asiankids.com
-              </a>
-              <div className="flex items-start gap-3 text-muted-foreground">
-                <Clock className="h-5 w-5 mt-1" />
-                <div>
-                  <p>Mon - Fri: 9:00 AM - 8:00 PM</p>
-                  <p>Sat: 10:00 AM - 6:00 PM</p>
-                  <p>Sun: Closed</p>
-                </div>
-              </div>
-            </div>
-          </motion.div>
-
           {/* Newsletter */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -140,9 +136,7 @@ export function Footer() {
             className="space-y-4"
           >
             <h3 className="text-lg font-semibold">Stay Updated</h3>
-            <p className="text-muted-foreground">
-              Subscribe to our newsletter for updates on classes, events, and performances.
-            </p>
+            <p className="text-muted-foreground">Subscribe to our newsletter for updates on classes and events.</p>
             <form onSubmit={handleSubscribe} className="space-y-2">
               <div className="flex gap-2">
                 <Input
@@ -159,19 +153,6 @@ export function Footer() {
             </form>
           </motion.div>
         </div>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="mt-16 pt-8 border-t text-center text-sm text-muted-foreground"
-        >
-          <p>© {new Date().getFullYear()} Asian Kids Dance Crew. All rights reserved.</p>
-          <div className="mt-2 space-x-4">
-            <Link href="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link>
-            <Link href="/terms" className="hover:text-primary transition-colors">Terms of Service</Link>
-          </div>
-        </motion.div>
       </div>
     </footer>
   );
